@@ -1,4 +1,8 @@
 from starlette.status import HTTP_302_FOUND
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 from app.routers.invitation import get_all_invitations, get_invitation_by_id
 
 

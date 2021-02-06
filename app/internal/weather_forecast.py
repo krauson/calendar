@@ -1,11 +1,20 @@
 import datetime
+<<<<<<< HEAD
 import frozendict
 import functools
+=======
+import functools
+
+import frozendict
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 import requests
 
 from app import config
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 # This feature requires an API KEY
 #  get yours free @ visual-crossing-weather.p.rapidapi.com
 

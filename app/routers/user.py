@@ -7,13 +7,25 @@ from app.database.models import User, UserEvent, Event
 from app.internal.utils import save
 
 
+<<<<<<< HEAD
 def create_user(username, password, email, session: Session) -> User:
+=======
+def create_user(username: str,
+                password: str,
+                email: str,
+                language: str,
+                session: Session) -> User:
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
     """Creates and saves a new user."""
 
     user = User(
         username=username,
         password=password,
         email=email,
+<<<<<<< HEAD
+=======
+        language=language
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
     )
     save(user, session=session)
     return user

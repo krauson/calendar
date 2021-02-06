@@ -1,11 +1,18 @@
 import datetime
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 import pytest
 import requests
 import responses
 
 from app.internal.weather_forecast import get_weather_data
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 HISTORY_URL = "https://visual-crossing-weather.p.rapidapi.com/history"
 FORECAST_URL = "https://visual-crossing-weather.p.rapidapi.com/forecast"
 RESPONSE_FROM_MOCK = {"locations": {"Tel Aviv": {"values": [

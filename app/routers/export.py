@@ -1,8 +1,13 @@
 from datetime import datetime
 from typing import List
 
+<<<<<<< HEAD
 from icalendar import Calendar, Event, vCalAddress, vText
 import pytz
+=======
+import pytz
+from icalendar import Calendar, Event, vCalAddress, vText
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 
 from app.config import DOMAIN, ICAL_VERSION, PRODUCT_ID
 from app.database.models import Event as UserEvent

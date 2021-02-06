@@ -3,9 +3,15 @@ from typing import List, Dict
 from sqlalchemy.orm import Session
 
 from app.database.models import Event, Invitation, UserEvent
+<<<<<<< HEAD
 from app.routers.export import event_to_ical
 from app.routers.user import does_user_exist, get_users
 from app.internal.utils import save
+=======
+from app.internal.utils import save
+from app.routers.export import event_to_ical
+from app.routers.user import does_user_exist, get_users
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 
 
 def sort_emails(

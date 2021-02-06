@@ -8,7 +8,11 @@ from sqlalchemy import and_, or_
 from app.database.database import get_db
 from app.database.models import Event, User
 from app.dependencies import TEMPLATES_PATH
+<<<<<<< HEAD
 
+=======
+from app.internal import zodiac
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
 
 templates = Jinja2Templates(directory=TEMPLATES_PATH)
 
@@ -105,9 +109,18 @@ async def dayview(request: Request, date: str, db_session=Depends(get_db)):
                 and_(Event.end >= day, Event.end < day_end),
                 and_(Event.start < day_end, day_end < Event.end)))
     events_n_attrs = [(event, DivAttributes(event, day)) for event in events]
+<<<<<<< HEAD
+=======
+    zodiac_obj = zodiac.get_zodiac_of_day(db_session, day)
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
     return templates.TemplateResponse("dayview.html", {
         "request": request,
         "events": events_n_attrs,
         "month": day.strftime("%B").upper(),
+<<<<<<< HEAD
         "day": day.day
+=======
+        "day": day.day,
+        "zodiac": zodiac_obj
+>>>>>>> 7f38da98a7122787cdd981344ce2f6a116f96e10
         })
